@@ -1,12 +1,12 @@
-package Lab1.data;
+package lab1singleton.data;
 
-import Lab1.model.Item;
+import lab1singleton.domain.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ItemDb implements ItemDao {
-    private final List<Item> data = new ArrayList<>();
+    private List<Item> data = new ArrayList<>();
 
     @Override
     public void addItem(Item item) {

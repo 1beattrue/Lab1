@@ -1,8 +1,7 @@
-package Lab1.model;
+package lab1singleton.domain;
 
-import Lab1.data.Connection;
-import Lab1.data.ItemDb;
-import Lab1.model.Item;
+import lab1singleton.data.Connection;
+import lab1singleton.data.ItemDb;
 
 public class SingletonService {
     public void exec() {

@@ -1,6 +1,6 @@
-package Lab1;
+package lab1singleton.presentation;
 
-import Lab1.model.SingletonService;
+import lab1singleton.domain.SingletonService;
 
 class Application {
     public static void main(String[] args) {

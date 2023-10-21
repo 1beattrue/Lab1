@@ -1,6 +1,6 @@
-package Lab1.data;
+package lab1singleton.data;
 
-import Lab1.model.Item;
+import lab1singleton.domain.Item;
 
 import java.util.List;
 
