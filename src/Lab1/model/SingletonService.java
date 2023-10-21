@@ -1,10 +1,10 @@
-package Lab1;
+package Lab1.model;
 
 import Lab1.data.Connection;
 import Lab1.data.ItemDb;
 import Lab1.model.Item;
 
-class SingletonService {
+public class SingletonService {
     public void exec() {
         ItemDb connection1 = Connection.getInstance();
         ItemDb connection2 = Connection.getInstance();

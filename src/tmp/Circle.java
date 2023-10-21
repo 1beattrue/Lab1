@@ -1,6 +1,6 @@
 package tmp;
 
-public class Circle extends Shape {
+public class Circle implements Shape {
 
     private double radius;
 
