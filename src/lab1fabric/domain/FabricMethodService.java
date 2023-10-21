@@ -8,7 +8,7 @@ import static lab1fabric.domain.Configuration.WEB;
 
 public class FabricMethodService {
     public void exec() {
-        Configuration configuration = Configuration.initWeb();
+        Configuration configuration = Configuration.initMob();
         Dialog dialog;
         switch (configuration.getPlatform()) {
             case WEB -> dialog = new WebDialog();
