@@ -1,10 +1,7 @@
-package data;
+package Lab1.data;
 
-public class Connection {
+abstract public class Connection {
     private static ItemDb instance;
-
-    private Connection() {
-    }
 
     public static ItemDb getInstance() {
         if (instance != null)

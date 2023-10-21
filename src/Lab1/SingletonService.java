@@ -1,6 +1,8 @@
-import data.Connection;
-import data.ItemDb;
-import model.Item;
+package Lab1;
+
+import Lab1.data.Connection;
+import Lab1.data.ItemDb;
+import Lab1.model.Item;
 
 class SingletonService {
     public void exec() {

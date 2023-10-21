@@ -1,6 +1,6 @@
-package data;
+package Lab1.data;
 
-import model.Item;
+import Lab1.model.Item;
 
 import java.util.List;
 
