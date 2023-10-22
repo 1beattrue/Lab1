@@ -41,4 +41,13 @@ public class Engine {
     public double getMileage() {
         return mileage;
     }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "volume=" + volume +
+                ", mileage=" + mileage +
+                ", started=" + started +
+                '}';
+    }
 }

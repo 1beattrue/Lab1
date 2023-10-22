@@ -4,14 +4,22 @@ import builder.domain.car.*;
 
 public class BuilderService {
     public void exec() {
-        CarBuilder builder = new CarBuilder();
-        builder.setCarType(CarType.SPORTS_CAR);
-        builder.setSeats(2);
-        builder.setEngine(new Engine(3.0, 0));
-        builder.setTransmission(Transmission.SEMI_AUTOMATIC);
-        builder.setTripComputer(new TripComputer());
-        builder.setGPSNavigator(new GpsNavigator());
-        Car car = builder.getResult();
-        System.out.println("Car built:\n" + car.getCarType());
+        Car car1 = Car.newBuilder()
+                .setCarType(CarType.CITY_CAR)
+                .setEngine(new Engine(2.0, 0))
+                .setSeats(4)
+                .setGpsNavigator(new GpsNavigator("address 1 to address 2"))
+                .build();
+        System.out.println(car1);
+
+        Car car2 = Car.newBuilder()
+                .setCarType(CarType.SPORTS_CAR)
+                .setEngine(new Engine(4.0, 0))
+                .setSeats(2)
+                .setTripComputer(new TripComputer())
+                .setTransmission(Transmission.SINGLE_SPEED)
+                .build();
+        car2.getTripComputer().setCar(car2);
+        car2.getTripComputer().showStatus();
     }
 }
