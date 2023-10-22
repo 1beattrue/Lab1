@@ -1,4 +1,4 @@
-package lab1fabric.domain;
+package lab1fabric.domain.entities;
 
 public interface Dialog {
     void render();

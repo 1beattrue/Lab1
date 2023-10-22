@@ -1,11 +1,9 @@
-package lab1fabric.data;
-
-import lab1fabric.domain.Button;
-import lab1fabric.domain.Dialog;
+package lab1fabric.domain.entities;
 
 public abstract class AbstractDialog implements Dialog {
-    abstract Button getButton();
+    public abstract Button getButton();
 
+    @Override
     public void render() {
         Button button = getButton();
         button.render();
